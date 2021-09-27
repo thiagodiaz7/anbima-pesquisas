@@ -701,6 +701,11 @@ height: 500px;
     padding:1.2em;
 }
 
+.unvs-quiz-form-control-others {
+    font-size:1em;
+    padding:.9em;
+}
+
 .unvs-quiz-success--small {
     opacity:.6;
     max-width:300px;
@@ -713,8 +718,44 @@ height: 500px;
     box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%), 0 0 8px #86bc25;
 }
 
-
-
+/**** 
+    CONFIGURAÇÃO DA ANIMAÇÃO DA HEADER
+        ****/
+        
+        .kenburns-top {
+            -webkit-animation: kenburns-top 20s ease-in-out both;
+                    animation: kenburns-top 20s ease-in-out both;
+        }
+        
+@-webkit-keyframes kenburns-top {
+    0% {
+      -webkit-transform: scale(1) translateY(0);
+              transform: scale(1) translateY(0);
+      -webkit-transform-origin: 50% 16%;
+              transform-origin: 50% 16%;
+    }
+    100% {
+      -webkit-transform: scale(1.25) translateY(-15px);
+              transform: scale(1.25) translateY(-15px);
+      -webkit-transform-origin: top;
+              transform-origin: top;
+    }
+  }
+  @keyframes kenburns-top {
+    0% {
+      -webkit-transform: scale(1) translateY(0);
+              transform: scale(1) translateY(0);
+      -webkit-transform-origin: 50% 16%;
+              transform-origin: 50% 16%;
+    }
+    100% {
+      -webkit-transform: scale(1.25) translateY(-15px);
+              transform: scale(1.25) translateY(-15px);
+      -webkit-transform-origin: top;
+              transform-origin: top;
+    }
+  }
+  
 /**** 
     CONFIGURAÇÃO DE RESPONSIVO
         ****/
@@ -859,4 +900,13 @@ height: 500px;
         -ms-flex-pack: center!important;
         justify-content: center!important;
     }
+}
+
+
+/***
+    Bugs overlay Bootstrap
+        ***/
+
+.btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn.active.focus {
+color:#fff;
 }
