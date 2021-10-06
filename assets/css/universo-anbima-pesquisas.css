@@ -291,6 +291,7 @@ body {
 
 .unvs-abm-lst-item--row {
     margin-bottom:1em;
+    margin-top:2em!important;
 }
 
 .unvs-abm-lst-card {
@@ -511,7 +512,7 @@ border-top-left-radius: 11px;
 border-bottom-left-radius: 11px;
 overflow:hidden;
 width: 100%;
-height: 500px;
+height: 460px;
 }
 
 .unvs-abm-modal-content--capa img {
@@ -530,6 +531,7 @@ height: 500px;
     font-weight: 600;
     font-size:.9em;
     margin-bottom:1.7em;
+    padding-left:0;
 }
 
 .modal-content--categories-item {
@@ -577,16 +579,21 @@ height: 500px;
 
 .unvs-abm-modal-tab--topics-item {
     background:url('../images/modals/unvs-abm-icon-check.png') no-repeat center left;
-    font-size:1.1em;
-    padding-left:1.8em;
-    padding-top:.5em;
-    padding-bottom:.4em;
+    font-size: 1.2em;
+    padding-left: 2.3em;
+    padding-top: .5em;
+    padding-bottom: .4em;
 }
 
 .unvs-abm-modal-tab-content {
-    height:180px;
-    overflow-y: auto;
-    overflow-x: hidden;
+    height: 180px;
+    width:100%;
+    overflow: auto;
+    float: left;
+}
+
+ul.unvs-abm-modal-tab--topics {
+    padding: 0;
 }
 
 .form-downloader {
@@ -776,7 +783,7 @@ height: 500px;
 }
 
 
-@media (max-width:600px) {
+@media (max-width:990px) {
     /*Limite de largura das informaçõees da header no mobile*/
     .unvs-abm-header-content {
         max-width:720px;
@@ -837,6 +844,7 @@ height: 500px;
         padding: 0 0 0 1.3em;
         margin-bottom:1em;
         font-size: .9em;
+        padding-left:0;
     }
 
     .unvs-abm-modal-tab-content {
@@ -899,6 +907,26 @@ height: 500px;
     .justify-content-md-center {
         -ms-flex-pack: center!important;
         justify-content: center!important;
+    }
+}
+
+@media (max-width:1190px) {
+    .unvs-abm-carousel--item-background img {
+        width: 120%;
+    }
+
+    .unvs-abm-carousel--pre {
+        margin: 4em 0 0 3em;
+        max-width: 420px;
+    }
+
+    .unvs-abm-lst-card-cover img {
+        width:100%;
+    }
+
+    .unvs-abm-lst-card,
+    .unvs-abm-lst-infos {
+        width:100%;
     }
 }
 

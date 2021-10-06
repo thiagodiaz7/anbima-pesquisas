@@ -35,7 +35,35 @@
     <link rel="stylesheet" href="assets/css/universo-anbima-pesquisas.css">
 	<link rel="stylesheet" href="assets/css/aos.css">
 
-
+	<style type="text/css">
+		.container.content-full {
+		  width: 100%;
+		  padding: 0;
+		}
+		.title-interna {
+		  display: none;
+		}
+		/* 1190 */
+		.unvs-bm-content {
+		  margin-top: 142px;
+		}
+		div.modal>.modal-dialog {
+			overflow: initial;
+		}
+		@media (max-width: 1200px) {
+		  .unvs-bm-content {
+			margin-top: 244px;
+		  }
+		}
+		@media (max-width: 1023px) {
+		  .unvs-bm-content {
+			margin-top: 36px;
+		  }
+		}
+		#sdk-anbima-scroll-to-top {
+		  bottom: 80px;
+		}
+	  </style>
 	
 
 
@@ -1387,6 +1415,7 @@
 </header>
 
 
+
 <!-- Todo o conteúdo dessa página está aqui dentro -->
 <section class="unvs-bm-content">
 
@@ -1409,10 +1438,10 @@
 					<!-- Informações da Header -->
 					<span class="unvs-abm-header--label clb">Pesquisas</span>
 					<h1 class="unvs-abm-header--title dbr-blck">Explore o Universo ANBIMA de Pesquisas</h1>
-					<p class="unvs-abm-header--lead clb">Imagine um lugar onde você possa entender sobre o complexo mundo financeiro, de diversos pontos de vista e ainda com dados!</p>
+					<p class="unvs-abm-header--lead clb">Imagine um lugar onde você possa entender sobre o mundo financeiro, de diversos pontos de vista e ainda com dados!</p>
 
 					<!-- Botão Começar a Explorar -->
-					<a href="#explorar" name="pesquisas" class="btn btn-primary unvs-abm-btn-primary dbr-bld">Começar a explorar</a>
+					<a href="#explorar" name="pesquisas" class="btn btn-primary unvs-abm-btn-primary dbr-bld">Conheça</a>
 				</div>
 			</div>
 
@@ -1433,11 +1462,11 @@
 	<section class="unvs-abm-rsrch">
 		<div class="container">
 		
-			<h2 class="unvs-abm-rsrch--title dbr-bld text-center" data-aos="fade-up" >Explore, descubra e compartilhe sua paixão!</h2>
+			<h2 class="unvs-abm-rsrch--title dbr-bld text-center" data-aos="fade-up" >Explore, descubra e compartilhe!</h2>
 
 			<!-- Área das pesquisas Destaques/Banner rotativo-->
 			<div class="unvs-abm-ftrd" data-aos="fade-up">
-				<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+				<div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="8000">
 				
 					<!-- Wrapper for slides -->
 					<div class="carousel-inner unvs-abm-carousel--inner" role="listbox">
@@ -1549,7 +1578,7 @@
 							<!-- Background da Pesquisa Destaque -->
 							<div class="unvs-abm-carousel--item-background">
 								<div class="unvs-abm-carousel-overflow"></div>
-								<img src="assets/images/covers/background-trajetoria-financeira-do-brasileiro.jpg" class="img-responsive" alt="">
+								<img src="assets/images/covers/background-trajetoria-financeira-do-brasileiro.jpg" alt="">
 							</div>
 							
 						</div>
@@ -1911,7 +1940,7 @@
 												Falamos em nome de instituições como bancos, gestoras, corretoras, distribuidoras e administradoras. 
 											</p>
 											<p>
-												Nascemos em 2009 a partir da união de duas entidades, mas representamos os mercados há quatro décadas. Nosso modelo de atuação é organizado em torno de quatro compromissos: informar, representar, autorregular e educar.
+												Nascemos em 2009 a partir da união de duas entidades, que já representavam os mercados há quatro décadas.
 											</p>
 										</div>
 									</div>
@@ -1924,10 +1953,10 @@
 										<div class="unvs-page-showroom-timeline--item-header dbr-bld yellow">Informar</div>
 										<div class="unvs-page-showroom-timeline--item-info clb">
 											<p>
-												Somos a principal provedora de informações sobre os segmentos de mercado que representamos. 
+												Um mercado forte se faz com profissionais qualificados e com investidores conscientes.
 											</p>
 											<p>
-												A construção de uma base de dados consistente é parte de nossos esforços para dar mais transparência e segurança aos mercados e, consequentemente, fomentar negócios. 
+												Somos uma das maiores certificadoras de profissionais que atuam nos nossos mercados e promovemos ações de educação financeira para diversos públicos
 											</p>
 										</div>
 									</div>
@@ -1941,7 +1970,7 @@
 										<div class="unvs-page-showroom-timeline--item-header dbr-bld dark-blue">Representar</div>
 										<div class="unvs-page-showroom-timeline--item-info clb">
 											<p>
-												Representamos o mercado de duas formas: Promovendo o diálogo para construir propostas de aprimoramento do mercado, e propondo boas práticas de negócios, que os associados seguem de forma voluntária. 
+												Representamos o mercado de duas formas: promovendo o diálogo para construir propostas de aprimoramento do mercado, e propondo boas práticas de negócios, que os associados seguem de forma voluntária.
 											</p>
 											
 										</div>
@@ -2013,62 +2042,300 @@
 
 </section>
 
-<!-- Modal do Quiz -->
-<div class="modal fade" id="quiz" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-	<div class="modal-dialog modal-lg" role="document">
-	 <div class="close unvs-abm-modal-close" data-dismiss="modal" aria-label="Close">
-		 Fechar
-	 </div>
 
-	  <div class="modal-content unvs-abm-modal-content unvs-abm-modal-quiz">
-		<!-- Início Form Quiz -->
-		<form accept-charset="UTF-8" action="https://getform.io/f/7c8c99b5-5fc2-4e58-86b0-6d4c6f7796a8" method="POST" enctype="multipart/form-data" target="_blank" id="primaryForm">
+<!-- ALL MODALS -->
+<div id="all-modals">
+	<!-- Modal do Quiz -->
+	<div class="modal fade" id="quiz" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog modal-lg" role="document">
+		<div class="close unvs-abm-modal-close" data-dismiss="modal" aria-label="Close">
+			Fechar
+		</div>
+
+		<div class="modal-content unvs-abm-modal-content unvs-abm-modal-quiz">
+			<!-- Início Form Quiz -->
+			<form accept-charset="UTF-8" action="https://getform.io/f/7c8c99b5-5fc2-4e58-86b0-6d4c6f7796a8" method="POST" enctype="multipart/form-data" target="_blank" id="primaryForm">
 
 
-			<div id="carousel-quiz-generic" class="carousel slide carousel-quiz" data-ride="carousel" data-wrap="false" data-pause="hover" data-interval="99999999999999999">
-				
-				<!-- Wrapper for slides -->
-				<div class="carousel-inner" role="listbox">
+				<div id="carousel-quiz-generic" class="carousel slide carousel-quiz" data-ride="carousel" data-wrap="false" data-pause="hover" data-interval="99999999999999999">
+					
+					<!-- Wrapper for slides -->
+					<div class="carousel-inner" role="listbox">
 
-				  <!-- Começar -->
-				  <div class="item active">
 					<!-- Começar -->
-					<div class="unvs-abm-modal-quiz-s0 text-center" >
+					<div class="item active">
+						<!-- Começar -->
+						<div class="unvs-abm-modal-quiz-s0 text-center" >
 
-						<h2 class="unvs-abm-modal-quiz--tittle dbr-blck">Olá! Bem-vindo(a) ao <span>Quiz Universo</span> da ANBIMA.</h2>
+							<h2 class="unvs-abm-modal-quiz--tittle dbr-blck">Olá! Bem-vindo(a) ao <span>Quiz Universo</span> da ANBIMA.</h2>
 
-						<p class="unvs-abm-modal-quiz--text clb">
-							Para facilitar sua experiência, gostaríamos que você 
-							respondesse algumas perguntas rápidas!
-							Vamos lá?
-						</p>
+							<p class="unvs-abm-modal-quiz--text clb">
+								Para facilitar sua experiência, gostaríamos que você 
+								respondesse algumas perguntas rápidas!
+								Vamos lá?
+							</p>
 
-						<a class="btn btn-primary unvs-abm-btn-primary dbr-bld unvs-abm-modal-quiz--continuar" href="#carousel-quiz-generic" role="button" data-slide="next">
-							Começar
-						</a>
-	
+							<a class="btn btn-primary unvs-abm-btn-primary dbr-bld unvs-abm-modal-quiz--continuar" href="#carousel-quiz-generic" role="button" data-slide="next">
+								Começar
+							</a>
+		
+						</div>
+						<!-- // Começar -->
+
 					</div>
-					<!-- // Começar -->
 
-				  </div>
+					<!-- Pergunta 1 -->
+					<div class="item">
+							<!-- Pergunta 1 -->
+								<div class="unvs-abm-modal-quiz-s1">
 
-				   <!-- Pergunta 1 -->
-				  <div class="item">
-						<!-- Pergunta 1 -->
-							<div class="unvs-abm-modal-quiz-s1">
+									<div class="unvs-abm-modal-quiz--seq clb">1 de 5</div>
 
-								<div class="unvs-abm-modal-quiz--seq clb">1 de 5</div>
+									<h3 class="unvs-abm-modal-quiz--question dbr-bld">Qual seu nível de conhecimento sobre a ANBIMA?</h3>
+									<p class="unvs-abm-modal-quiz--small clb">Escolha uma das opções abaixo. Caso você não queira responder, clique em "Próximo".</p>
 
-								<h3 class="unvs-abm-modal-quiz--question dbr-bld">Qual seu nível de conhecimento sobre a ANBIMA?</h3>
+									<div class="unvs-spacing"></div>
+									<div class="row clb">
+										<div class="col-md-6">
+											<div class="radio unvs-abm-modal-quiz--radio">
+												<label>
+													<input type="radio" name="Nível de conhecimento sobre a Anbima" id="q1-option-1" value="Acesso o portal com frequência">
+												Acesso o portal com frequência
+												</label>
+											</div>
+										</div>
+										
+										<div class="col-md-6">
+											<div class="radio unvs-abm-modal-quiz--radio">
+												<label>
+													<input type="radio" name="Nível de conhecimento sobre a Anbima" id="q1-option-2" value="Acompanho, às vezes, nas redes sociais">
+												Acompanho, às vezes, nas redes sociais
+												</label>
+											</div>
+										</div>
+									</div>
+
+									<div class="row clb">
+										<div class="col-md-6">
+											<div class="radio unvs-abm-modal-quiz--radio">
+												<label>
+													<input type="radio" name="Nível de conhecimento sobre a Anbima" id="q1-option-3" value="Primeira vez no portal">
+												Primeira vez no portal
+												</label>
+											</div>
+										</div>
+										
+										<div class="col-md-6">
+											<div class="radio unvs-abm-modal-quiz--radio">
+												<label>
+													<input type="radio" name="Nível de conhecimento sobre a Anbima" id="q1-option-5" value="Tenho conhecimento intermediário">
+												Tenho conhecimento intermediário
+												</label>
+											</div>
+										</div>
+									</div>
+
+									
+									
+									
+								</div>
+							<!-- // Pergunta 1 -->
+
+								<!-- Controls -->
+								<div class="unvs-abm-modal-quiz-actions dbr-bld">
+									<div class="row">
+										<div class="col-xs-3 col-md-6">
+											
+											<a class="btn unvs-abm-modal-quiz--pular" href="#carousel-quiz-generic" role="button" data-slide="prev">
+												Voltar
+											</a>
+										</div>
+
+										<div class="col-xs-3 col-md-6 text-right">					
+											<a class="btn btn-primary unvs-abm-btn-primary dbr-bld unvs-abm-modal-quiz--continuar" href="#carousel-quiz-generic" role="button" data-slide="next">
+												Próximo
+											</a>
+							
+										</div>
+									</div>
+								</div>
+					</div>
+
+					<!-- Pergunta 2 -->
+					<div class="item">
+						<!-- Pergunta 2 -->
+						<div class="unvs-abm-modal-quiz-s2">
+							<div class="unvs-abm-modal-quiz--seq clb">2 de 5</div>
+							<h3 class="unvs-abm-modal-quiz--question dbr-bld">Quem é você no universo de investimentos?</h3>
+							<p class="unvs-abm-modal-quiz--small clb">Escolha uma das opções abaixo. Caso você não queira responder, clique em "Próximo".</p>
+
+							<div class="unvs-spacing"></div>
+							<div class="row clb">
+								<div class="col-md-6">
+									<div class="radio unvs-abm-modal-quiz--radio">
+										<label>
+											<input type="radio" name="Quem é você no Universo de Investimentos" id="q2-option-1" value="Sou profissional em busca de dados do mercado">
+											Sou profissional em busca de dados do 
+											mercado
+										</label>
+									</div>
+								</div>
+								
+								<div class="col-md-6">
+									<div class="radio unvs-abm-modal-quiz--radio">
+										<label>
+											<input type="radio" name="Quem é você no Universo de Investimentos" id="q2-option-2" value="Sou profissional de imprensa">
+										Sou profissional de imprensa
+										</label>
+									</div>
+								</div>
+							</div>
+
+							<div class="row clb">
+								<div class="col-md-6">
+									<div class="radio unvs-abm-modal-quiz--radio">
+										<label>
+											<input type="radio" name="Quem é você no Universo de Investimentos" id="q2-option-3" value="Sou iniciante, estou dando meus primeiros passos no investimento">
+										Sou iniciante, estou dando meus primeiros passos no investimento
+										</label>
+									</div>
+								</div>
+
+								<div class="col-md-6">
+									<div class="radio unvs-abm-modal-quiz--radio">
+										<label>
+											<input type="radio" name="Quem é você no Universo de Investimentos" id="q2-option-5" value="Vou passar pela certificação e quero receber conteúdo">
+										Vou passar pela certificação e quero receber conteúdo
+										</label>
+									</div>
+								</div>
+								
+							</div>
+
+							<div class="row clb">
+						
+
+
+								
+								
+								
+							</div>
+							
+							
+						</div>
+						<!-- // Pergunta 2 -->
+
+							<!-- Controls -->
+							<div class="unvs-abm-modal-quiz-actions dbr-bld">
+								<div class="row">
+									<div class="col-xs-3 col-md-6">
+										
+										<a class="btn unvs-abm-modal-quiz--pular" href="#carousel-quiz-generic" role="button" data-slide="prev">
+											Voltar
+										</a>
+									</div>
+
+									<div class="col-xs-3 col-md-6 text-right">					
+										<a class="btn btn-primary unvs-abm-btn-primary dbr-bld unvs-abm-modal-quiz--continuar" href="#carousel-quiz-generic" role="button" data-slide="next">
+											Próximo
+										</a>
+						
+									</div>
+								</div>
+							</div>
+					</div>
+
+
+					<!-- Pergunta 3 -->
+					<div class="item">
+						<!-- Pergunta 3 -->
+						<div class="unvs-abm-modal-quiz-s2">
+							<div class="unvs-abm-modal-quiz--seq clb">3 de 5</div>
+							<h3 class="unvs-abm-modal-quiz--question dbr-bld">Como conheceu a ANBIMA?</h3>
+							<p class="unvs-abm-modal-quiz--small clb">Escolha uma das opções abaixo. Caso você não queira responder, clique em "Próximo".</p>
+
+							<div class="unvs-spacing"></div>
+							<div class="row clb">
+								<div class="col-md-6">
+									<div class="radio unvs-abm-modal-quiz--radio">
+										<label>
+											<input type="radio" name="Como conheceu a ANBIMA?" id="q3-option-1" value="Sou ligado(a) a uma instituição associada">
+											Sou ligado(a) a uma instituição associada
+										</label>
+									</div>
+								</div>
+								
+								<div class="col-md-6">
+									<div class="radio unvs-abm-modal-quiz--radio">
+										<label>
+											<input type="radio" name="Como conheceu a ANBIMA?" id="q3-option-2" value="Redes sociais">
+										Redes sociais
+										</label>
+									</div>
+								</div>
+							</div>
+
+							<div class="row clb">
+								<div class="col-md-6">
+									<div class="radio unvs-abm-modal-quiz--radio">
+										<label>
+											<input type="radio" name="Como conheceu a ANBIMA?" id="q3-option-3" value="Imprensa">
+										Imprensa
+										</label>
+									</div>
+								</div>
+
+							
+								
+								
+							</div>
+
+							<div class="row clb">
+								
+								
+								
+							</div>
+							
+							
+						</div>
+						<!-- // Pergunta 3 -->
+
+							<!-- Controls -->
+							<div class="unvs-abm-modal-quiz-actions dbr-bld">
+								<div class="row">
+									<div class="col-xs-3 col-md-6">
+										
+										<a class="btn unvs-abm-modal-quiz--pular" href="#carousel-quiz-generic" role="button" data-slide="prev">
+											Voltar
+										</a>
+									</div>
+
+									<div class="col-xs-3 col-md-6 text-right">					
+										<a class="btn btn-primary unvs-abm-btn-primary dbr-bld unvs-abm-modal-quiz--continuar" href="#carousel-quiz-generic" role="button" data-slide="next">
+											Próximo
+										</a>
+						
+									</div>
+								</div>
+							</div>
+					</div>
+
+
+						<!-- Pergunta 4 -->
+						<div class="item">
+							<!-- Pergunta 4 -->
+							<div class="unvs-abm-modal-quiz-s2">
+								<div class="unvs-abm-modal-quiz--seq clb">4 de 5</div>
+								<h3 class="unvs-abm-modal-quiz--question dbr-bld">O que você avalia ser importante em uma pesquisa?</h3>
 								<p class="unvs-abm-modal-quiz--small clb">Escolha uma das opções abaixo. Caso você não queira responder, clique em "Próximo".</p>
-
+		
 								<div class="unvs-spacing"></div>
 								<div class="row clb">
 									<div class="col-md-6">
 										<div class="radio unvs-abm-modal-quiz--radio">
 											<label>
-												<input type="radio" name="Nível de conhecimento sobre a Anbima" id="q1-option-1" value="Acesso o portal com frequência">
-											Acesso o portal com frequência
+												<input type="radio" name="O que você avalia ser importante em uma pesquisa?" id="q4-option-1" value="Conteúdo objetivo e claro">
+												Conteúdo objetivo e claro
 											</label>
 										</div>
 									</div>
@@ -2076,19 +2343,19 @@
 									<div class="col-md-6">
 										<div class="radio unvs-abm-modal-quiz--radio">
 											<label>
-												<input type="radio" name="Nível de conhecimento sobre a Anbima" id="q1-option-2" value="Acompanho, às vezes, nas redes sociais">
-											Acompanho, às vezes, nas redes sociais
+												<input type="radio" name="O que você avalia ser importante em uma pesquisa?" id="q4-option-2" value="Conteúdo dinâmico e ilustrativo">
+											Conteúdo dinâmico e ilustrativo
 											</label>
 										</div>
 									</div>
 								</div>
-
+		
 								<div class="row clb">
 									<div class="col-md-6">
 										<div class="radio unvs-abm-modal-quiz--radio">
 											<label>
-												<input type="radio" name="Nível de conhecimento sobre a Anbima" id="q1-option-3" value="Primeira vez no portal">
-											Primeira vez no portal
+												<input type="radio" name="O que você avalia ser importante em uma pesquisa?" id="q4-option-3" value="Conteúdo extenso e informativo">
+											Conteúdo extenso e informativo
 											</label>
 										</div>
 									</div>
@@ -2096,443 +2363,205 @@
 									<div class="col-md-6">
 										<div class="radio unvs-abm-modal-quiz--radio">
 											<label>
-												<input type="radio" name="Nível de conhecimento sobre a Anbima" id="q1-option-5" value="Tenho conhecimento intermediário">
-											Tenho conhecimento intermediário
+												<input type="radio" name="O que você avalia ser importante em uma pesquisa?" id="q4-option-4" value="Conteúdo de fácil compreensão">
+											Conteúdo de fácil compreensão
 											</label>
 										</div>
 									</div>
 								</div>
-
-								
-								
-								
-							</div>
-						<!-- // Pergunta 1 -->
-
-							<!-- Controls -->
-							<div class="unvs-abm-modal-quiz-actions dbr-bld">
-								<div class="row">
-									<div class="col-xs-3 col-md-6">
-										
-										<a class="btn unvs-abm-modal-quiz--pular" href="#carousel-quiz-generic" role="button" data-slide="prev">
-											Voltar
-										</a>
+		
+								<div class="row clb">
+									<div class="col-md-6">
+										<div class="radio unvs-abm-modal-quiz--radio">
+											<label>
+												<input type="radio" name="O que você avalia ser importante em uma pesquisa?" id="q4-option-5" value="Conteúdo curto e de leitura rápida">
+										Conteúdo curto e de leitura rápida
+											</label>
+										</div>
 									</div>
-
-									<div class="col-xs-3 col-md-6 text-right">					
-										<a class="btn btn-primary unvs-abm-btn-primary dbr-bld unvs-abm-modal-quiz--continuar" href="#carousel-quiz-generic" role="button" data-slide="next">
-											Próximo
-										</a>
-						
-									</div>
-								</div>
-							</div>
-				  </div>
-
-				  <!-- Pergunta 2 -->
-				  <div class="item">
-					<!-- Pergunta 2 -->
-					<div class="unvs-abm-modal-quiz-s2">
-						<div class="unvs-abm-modal-quiz--seq clb">2 de 5</div>
-						<h3 class="unvs-abm-modal-quiz--question dbr-bld">Quem é você no universo de investimentos?</h3>
-						<p class="unvs-abm-modal-quiz--small clb">Escolha uma das opções abaixo. Caso você não queira responder, clique em "Próximo".</p>
-
-						<div class="unvs-spacing"></div>
-						<div class="row clb">
-							<div class="col-md-6">
-								<div class="radio unvs-abm-modal-quiz--radio">
-									<label>
-										<input type="radio" name="Quem é você no Universo de Investimentos" id="q2-option-1" value="Sou profissional em busca de dados do mercado">
-										Sou profissional em busca de dados do 
-										mercado
-									</label>
-								</div>
-							</div>
-							
-							<div class="col-md-6">
-								<div class="radio unvs-abm-modal-quiz--radio">
-									<label>
-										<input type="radio" name="Quem é você no Universo de Investimentos" id="q2-option-2" value="Sou profissional de imprensa">
-									Sou profissional de imprensa
-									</label>
-								</div>
-							</div>
-						</div>
-
-						<div class="row clb">
-							<div class="col-md-6">
-								<div class="radio unvs-abm-modal-quiz--radio">
-									<label>
-										<input type="radio" name="Quem é você no Universo de Investimentos" id="q2-option-3" value="Sou iniciante, estou dando meus primeiros passos no investimento">
-									Sou iniciante, estou dando meus primeiros passos no investimento
-									</label>
-								</div>
-							</div>
-
-							<div class="col-md-6">
-								<div class="radio unvs-abm-modal-quiz--radio">
-									<label>
-										<input type="radio" name="Quem é você no Universo de Investimentos" id="q2-option-5" value="Vou passar pela certificação e quero receber conteúdo">
-									Vou passar pela certificação e quero receber conteúdo
-									</label>
-								</div>
-							</div>
-							
-						</div>
-
-						<div class="row clb">
-					
-
-
-							
-							
-							
-						</div>
-						
-						
-					</div>
-					<!-- // Pergunta 2 -->
-
-						<!-- Controls -->
-						<div class="unvs-abm-modal-quiz-actions dbr-bld">
-							<div class="row">
-								<div class="col-xs-3 col-md-6">
 									
-									<a class="btn unvs-abm-modal-quiz--pular" href="#carousel-quiz-generic" role="button" data-slide="prev">
-										Voltar
-									</a>
-								</div>
-
-								<div class="col-xs-3 col-md-6 text-right">					
-									<a class="btn btn-primary unvs-abm-btn-primary dbr-bld unvs-abm-modal-quiz--continuar" href="#carousel-quiz-generic" role="button" data-slide="next">
-										Próximo
-									</a>
-					
-								</div>
-							</div>
-						</div>
-			  	  </div>
-
-
-				   <!-- Pergunta 3 -->
-				   <div class="item">
-					<!-- Pergunta 3 -->
-					<div class="unvs-abm-modal-quiz-s2">
-						<div class="unvs-abm-modal-quiz--seq clb">3 de 5</div>
-						<h3 class="unvs-abm-modal-quiz--question dbr-bld">Como conheceu a ANBIMA?</h3>
-						<p class="unvs-abm-modal-quiz--small clb">Escolha uma das opções abaixo. Caso você não queira responder, clique em "Próximo".</p>
-
-						<div class="unvs-spacing"></div>
-						<div class="row clb">
-							<div class="col-md-6">
-								<div class="radio unvs-abm-modal-quiz--radio">
-									<label>
-										<input type="radio" name="Como conheceu a ANBIMA?" id="q3-option-1" value="Sou ligado(a) a uma instituição associada">
-										Sou ligado(a) a uma instituição associada
-									</label>
-								</div>
-							</div>
-							
-							<div class="col-md-6">
-								<div class="radio unvs-abm-modal-quiz--radio">
-									<label>
-										<input type="radio" name="Como conheceu a ANBIMA?" id="q3-option-2" value="Redes sociais">
-									Redes sociais
-									</label>
-								</div>
-							</div>
-						</div>
-
-						<div class="row clb">
-							<div class="col-md-6">
-								<div class="radio unvs-abm-modal-quiz--radio">
-									<label>
-										<input type="radio" name="Como conheceu a ANBIMA?" id="q3-option-3" value="Imprensa">
-									Imprensa
-									</label>
-								</div>
-							</div>
-
-						
-							
-							
-						</div>
-
-						<div class="row clb">
-							
-							
-							
-						</div>
-						
-						
-					</div>
-					<!-- // Pergunta 3 -->
-
-						<!-- Controls -->
-						<div class="unvs-abm-modal-quiz-actions dbr-bld">
-							<div class="row">
-								<div class="col-xs-3 col-md-6">
 									
-									<a class="btn unvs-abm-modal-quiz--pular" href="#carousel-quiz-generic" role="button" data-slide="prev">
-										Voltar
-									</a>
-								</div>
-
-								<div class="col-xs-3 col-md-6 text-right">					
-									<a class="btn btn-primary unvs-abm-btn-primary dbr-bld unvs-abm-modal-quiz--continuar" href="#carousel-quiz-generic" role="button" data-slide="next">
-										Próximo
-									</a>
-					
-								</div>
-							</div>
-						</div>
-			  	  </div>
-
-
-					<!-- Pergunta 4 -->
-					<div class="item">
-						<!-- Pergunta 4 -->
-						<div class="unvs-abm-modal-quiz-s2">
-							<div class="unvs-abm-modal-quiz--seq clb">4 de 5</div>
-							<h3 class="unvs-abm-modal-quiz--question dbr-bld">O que você avalia ser importante em uma pesquisa?</h3>
-							<p class="unvs-abm-modal-quiz--small clb">Escolha uma das opções abaixo. Caso você não queira responder, clique em "Próximo".</p>
-	
-							<div class="unvs-spacing"></div>
-							<div class="row clb">
-								<div class="col-md-6">
-									<div class="radio unvs-abm-modal-quiz--radio">
-										<label>
-											<input type="radio" name="O que você avalia ser importante em uma pesquisa?" id="q4-option-1" value="Conteúdo objetivo e claro">
-											Conteúdo objetivo e claro
-										</label>
-									</div>
-								</div>
-								
-								<div class="col-md-6">
-									<div class="radio unvs-abm-modal-quiz--radio">
-										<label>
-											<input type="radio" name="O que você avalia ser importante em uma pesquisa?" id="q4-option-2" value="Conteúdo dinâmico e ilustrativo">
-										Conteúdo dinâmico e ilustrativo
-										</label>
-									</div>
-								</div>
-							</div>
-	
-							<div class="row clb">
-								<div class="col-md-6">
-									<div class="radio unvs-abm-modal-quiz--radio">
-										<label>
-											<input type="radio" name="O que você avalia ser importante em uma pesquisa?" id="q4-option-3" value="Conteúdo extenso e informativo">
-										Conteúdo extenso e informativo
-										</label>
-									</div>
-								</div>
-								
-								<div class="col-md-6">
-									<div class="radio unvs-abm-modal-quiz--radio">
-										<label>
-											<input type="radio" name="O que você avalia ser importante em uma pesquisa?" id="q4-option-4" value="Conteúdo de fácil compreensão">
-										Conteúdo de fácil compreensão
-										</label>
-									</div>
-								</div>
-							</div>
-	
-							<div class="row clb">
-								<div class="col-md-6">
-									<div class="radio unvs-abm-modal-quiz--radio">
-										<label>
-											<input type="radio" name="O que você avalia ser importante em uma pesquisa?" id="q4-option-5" value="Conteúdo curto e de leitura rápida">
-									 Conteúdo curto e de leitura rápida
-										</label>
-									</div>
 								</div>
 								
 								
 							</div>
+							<!-- // Pergunta 4 -->
+		
+								<!-- Controls -->
+								<div class="unvs-abm-modal-quiz-actions dbr-bld">
+									<div class="row">
+										<div class="col-xs-3 col-md-6">
+											
+											<a class="btn unvs-abm-modal-quiz--pular" href="#carousel-quiz-generic" role="button" data-slide="prev">
+												Voltar
+											</a>
+										</div>
+		
+										<div class="col-xs-3 col-md-6 text-right">					
+											<a class="btn btn-primary unvs-abm-btn-primary dbr-bld unvs-abm-modal-quiz--continuar" href="#carousel-quiz-generic" role="button" data-slide="next">
+												Próximo
+											</a>
 							
-							
-						</div>
-						<!-- // Pergunta 4 -->
-	
-							<!-- Controls -->
-							<div class="unvs-abm-modal-quiz-actions dbr-bld">
-								<div class="row">
-									<div class="col-xs-3 col-md-6">
-										
-										<a class="btn unvs-abm-modal-quiz--pular" href="#carousel-quiz-generic" role="button" data-slide="prev">
-											Voltar
-										</a>
-									</div>
-	
-									<div class="col-xs-3 col-md-6 text-right">					
-										<a class="btn btn-primary unvs-abm-btn-primary dbr-bld unvs-abm-modal-quiz--continuar" href="#carousel-quiz-generic" role="button" data-slide="next">
-											Próximo
-										</a>
-						
+										</div>
 									</div>
 								</div>
-							</div>
-					</div>
+						</div>
 
 
-					<!-- Pergunta 5 -->
-					<div class="item">
 						<!-- Pergunta 5 -->
-						<div class="unvs-abm-modal-quiz-s2">
-							<div class="unvs-abm-modal-quiz--seq clb">5 de 5</div>
-							<h3 class="unvs-abm-modal-quiz--question dbr-bld">Qual o maior motivo de você se interessar em acessar as pesquisas da ANBIMA?</h3>
-							<p class="unvs-abm-modal-quiz--small clb">Escolha uma das opções abaixo. Caso você não queira responder, clique em "Próximo".</p>
-	
-							<div class="unvs-spacing"></div>
-							<div class="row clb">
-								<div class="col-md-6">
-									<div class="radio unvs-abm-modal-quiz--radio">
-										<label>
-											<input type="radio" name="Maior interesse em acessar pesquisas ANBIMA?" id="q5-option-1" value="Para conhecer melhor o mercado financeiro">
-											Para conhecer melhor o mercado financeiro
-										</label>
+						<div class="item">
+							<!-- Pergunta 5 -->
+							<div class="unvs-abm-modal-quiz-s2">
+								<div class="unvs-abm-modal-quiz--seq clb">5 de 5</div>
+								<h3 class="unvs-abm-modal-quiz--question dbr-bld">Qual o maior motivo de você se interessar em acessar as pesquisas da ANBIMA?</h3>
+								<p class="unvs-abm-modal-quiz--small clb">Escolha uma das opções abaixo. Caso você não queira responder, clique em "Próximo".</p>
+		
+								<div class="unvs-spacing"></div>
+								<div class="row clb">
+									<div class="col-md-6">
+										<div class="radio unvs-abm-modal-quiz--radio">
+											<label>
+												<input type="radio" name="Maior interesse em acessar pesquisas ANBIMA?" id="q5-option-1" value="Para conhecer melhor o mercado financeiro">
+												Para conhecer melhor o mercado financeiro
+											</label>
+										</div>
+									</div>
+									
+									<div class="col-md-6">
+										<div class="radio unvs-abm-modal-quiz--radio">
+											<label>
+												<input type="radio" name="Maior interesse em acessar pesquisas ANBIMA?" id="q5-option-2" value="Preparação de cursos e certificações">
+											Preparação de cursos e certificações
+											</label>
+										</div>
 									</div>
 								</div>
+		
+								<div class="row clb">
+									<div class="col-md-6">
+										<div class="radio unvs-abm-modal-quiz--radio">
+											<label>
+												<input type="radio" name="Maior interesse em acessar pesquisas ANBIMA?" id="q5-option-3" value="Busco dados e estatísticas">
+											Busco dados e estatísticas
+											</label>
+										</div>
+									</div>
+									
+									
+								</div>
+		
 								
-								<div class="col-md-6">
-									<div class="radio unvs-abm-modal-quiz--radio">
-										<label>
-											<input type="radio" name="Maior interesse em acessar pesquisas ANBIMA?" id="q5-option-2" value="Preparação de cursos e certificações">
-										Preparação de cursos e certificações
-										</label>
-									</div>
-								</div>
+								
+								
 							</div>
-	
-							<div class="row clb">
-								<div class="col-md-6">
-									<div class="radio unvs-abm-modal-quiz--radio">
-										<label>
-											<input type="radio" name="Maior interesse em acessar pesquisas ANBIMA?" id="q5-option-3" value="Busco dados e estatísticas">
-										Busco dados e estatísticas
-										</label>
+							<!-- // Pergunta 5 -->
+		
+								<!-- Controls -->
+								<div class="unvs-abm-modal-quiz-actions dbr-bld">
+									<div class="row">
+										<div class="col-xs-3 col-md-6">
+											
+											<a class="btn unvs-abm-modal-quiz--pular" href="#carousel-quiz-generic" role="button" data-slide="prev">
+												Voltar
+											</a>
+										</div>
+		
+										<div class="col-xs-3 col-md-6 text-right">					
+											<button type="submit" class="btn btn-primary unvs-abm-btn-primary dbr-bld unvs-abm-modal-quiz--continuar">
+												Finalizar
+											</button>
+							
+										</div>
 									</div>
 								</div>
-								
-								
-							</div>
-	
-							
-							
-							
 						</div>
-						<!-- // Pergunta 5 -->
-	
-							<!-- Controls -->
-							<div class="unvs-abm-modal-quiz-actions dbr-bld">
-								<div class="row">
-									<div class="col-xs-3 col-md-6">
-										
-										<a class="btn unvs-abm-modal-quiz--pular" href="#carousel-quiz-generic" role="button" data-slide="prev">
-											Voltar
-										</a>
-									</div>
-	
-									<div class="col-xs-3 col-md-6 text-right">					
-										<button type="submit" class="btn btn-primary unvs-abm-btn-primary dbr-bld unvs-abm-modal-quiz--continuar">
-											Finalizar
-										</button>
-						
-									</div>
-								</div>
-							</div>
+
+
+
+
 					</div>
-
-
-
-
-				</div>
-			  
 				
-			  </div>
+					
+				</div>
 
 
-			
-
-		
-
+				
 
 			
 
-		</form>
-		<!-- Fim Form Quiz -->
 
-		
-		<div class="quiz-success hidden text-center">
-			<div class="row">
-				<div class="col-md-12">
-					<h3 class="unvs-quiz-success--title dbr-bld ">Obrigado por nos ajudar! Quiz finalizado com sucesso!</h3> 
-					<p class="unvs-quiz-success--text clb">Se você é igual nós, apaixonados por conhecimento, você pode ainda 
-						adquirir o nosso informativo semanal para ter acesso as nossas 
-						pesquisas programadas em primeira mão!</p>
+				
 
-						<form accept-charset="UTF-8" action="https://getform.io/f/417244f9-c52c-4d5a-aaf1-d52105ea3b91" method="POST" enctype="multipart/form-data" target="_blank" id="secondaryForm">
-						<div class="row">
-							<div class="col-md-6">
-								<div class="form-group">
-									<input type="text" autofocus class="form-control clb unvs-quiz-form-control" id="QuizEndingNome" placeholder="Digite aqui seu nome" name="Nome">
+			</form>
+			<!-- Fim Form Quiz -->
+
+			
+			<div class="quiz-success hidden text-center">
+				<div class="row">
+					<div class="col-md-12">
+						<h3 class="unvs-quiz-success--title dbr-bld ">Obrigado por nos ajudar! Quiz finalizado com sucesso!</h3> 
+						<p class="unvs-quiz-success--text clb">Se você é igual nós, apaixonados por conhecimento, você pode ainda 
+							adquirir o nosso informativo semanal para ter acesso as nossas 
+							pesquisas programadas em primeira mão! Tudo gratuito!</p>
+
+							<form accept-charset="UTF-8" action="https://getform.io/f/417244f9-c52c-4d5a-aaf1-d52105ea3b91" method="POST" enctype="multipart/form-data" target="_blank" id="secondaryForm">
+							<div class="row">
+								<div class="col-md-6">
+									<div class="form-group">
+										<input type="text" autofocus class="form-control clb unvs-quiz-form-control" id="QuizEndingNome" placeholder="Digite aqui seu nome" name="Nome">
+									</div>
 								</div>
-							</div>
-							<div class="col-md-6">
-								<div class="form-group">
-									<input type="email" class="form-control clb unvs-quiz-form-control" id="QuizEndingEmail" placeholder="Seu e-mail" name="E-mail">
-								</div>
-							</div>
-						</div>
-
-						<div class="row">
-							<div class="col-md-12">
-								<div class="form-group">
-									<input type="text" class="form-control clb unvs-quiz-form-control" id="QuizEndingEmpresa" placeholder="Digite sua empresa" name="Empresa">
-								</div>
-							</div>
-						</div>
-
-						<div class="row">
-							<div class="col-md-12">
-								<div class="form-group">
-									<input type="text" class="form-control clb unvs-quiz-form-control" id="QuizEndingCargo" placeholder="Cargo" name="Cargo">
-								</div>
-							</div>
-						</div>
-
-						<div class="unvs-quiz-success--small clb">
-							Prometemos não utilizar suas informações de contato para enviar qualquer tipo de SPAM.
-						</div>
-
-						
-						
-
-							<!-- Controls -->
-							<div class="unvs-abm-modal-quiz-actions dbr-bld">
-								<div class="row">
-							
-									<div class="col-md-12">					
-										<button type="submit" class="btn btn-primary unvs-abm-btn-primary dbr-bld">Enviar e fechar</button>						
+								<div class="col-md-6">
+									<div class="form-group">
+										<input type="email" class="form-control clb unvs-quiz-form-control" id="QuizEndingEmail" placeholder="Seu e-mail" name="E-mail">
 									</div>
 								</div>
 							</div>
-						
-					</form>
+
+							<div class="row">
+								<div class="col-md-12">
+									<div class="form-group">
+										<input type="text" class="form-control clb unvs-quiz-form-control" id="QuizEndingEmpresa" placeholder="Digite sua empresa" name="Empresa">
+									</div>
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="col-md-12">
+									<div class="form-group">
+										<input type="text" class="form-control clb unvs-quiz-form-control" id="QuizEndingCargo" placeholder="Cargo" name="Cargo">
+									</div>
+								</div>
+							</div>
+
+							<div class="unvs-quiz-success--small clb">
+								Prometemos não utilizar suas informações de contato para enviar qualquer tipo de SPAM.
+							</div>
+
+							
+							
+
+								<!-- Controls -->
+								<div class="unvs-abm-modal-quiz-actions dbr-bld">
+									<div class="row">
+								
+										<div class="col-md-12">					
+											<button type="submit" class="btn btn-primary unvs-abm-btn-primary dbr-bld">Enviar e fechar</button>						
+										</div>
+									</div>
+								</div>
+							
+						</form>
+					</div>
 				</div>
 			</div>
+			
+			
 		</div>
-		
-		
-	  </div>
+		</div>
 	</div>
-</div>
 
 <!-- // Modal do Quiz -->
-
-
-
 
 <!-- Modais dos cards das pesquisas -->
 
@@ -3095,7 +3124,7 @@
 									<!-- Hidden input para dizer qual material está baixando -->
 									<div class="radio" style="display:none">
 										<label>
-											<input type="radio" name="Material" id="hiddenInput" value="Ciberseguranca 1" checked>
+											<input type="radio" name="Material" id="hiddenInput" value="Ciberseguranca 2" checked>
 											Cibersegurança - Edição 1
 										</label>
 									</div>
@@ -3221,8 +3250,8 @@
 									<!-- Hidden input para dizer qual material está baixando -->
 									<div class="radio" style="display:none">
 										<label>
-											<input type="radio" name="Material" id="hiddenInput" value="Ciberseguranca 1" checked>
-											Cibersegurança - Edição 1
+											<input type="radio" name="Material" id="hiddenInput" value="Ciberseguranca 2" checked>
+											Cibersegurança - Edição 2
 										</label>
 									</div>
 
@@ -3717,7 +3746,8 @@
 	</div>
 
 <!-- FIM INFLUENCIADORES DE INVESTIMENTOS -->
-
+</div>
+<!-- ALL MODALS -->
 
 <!-- Primary Form - Quiz -->
 <script>
@@ -3745,8 +3775,6 @@
 		});
 	});
 </script>
-
-
 <!-- Secondary Form - Quiz -->
 <script>
 	
@@ -3808,6 +3836,12 @@ $(".AnbimaDownloads").submit(function(e){
 <script>
 	//Animações de entrada com scroll
 	AOS.init();
+</script>
+
+<script>
+	//Move modais para fim do body
+	var _allModals = document.getElementById('all-modals')
+	document.body.appendChild(_allModals);
 </script>
 
 </body>
