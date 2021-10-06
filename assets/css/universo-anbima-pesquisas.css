@@ -901,6 +901,10 @@ ul.unvs-abm-modal-tab--topics {
         padding:1.5em 1em;
     }
 
+    .unvs-abm-modal-relacionados--capa img {
+        margin: 0 auto;
+    }
+
 }
 
 @media (min-width: 768px) {
