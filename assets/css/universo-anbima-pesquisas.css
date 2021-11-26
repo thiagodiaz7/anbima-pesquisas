@@ -139,7 +139,7 @@ body {
     border-radius:500px;
     font-size:1.3em;
     padding:.7em 1em;
-    margin:1em 0;
+    margin:0.5em 0;
     transition: all .2s ease 0s;
 }
 
@@ -637,7 +637,7 @@ ul.unvs-abm-modal-tab--topics {
 
 .unvs-abm-modal-quiz-s1,
 .unvs-abm-modal-quiz-s2 {
-    padding:0em 5em;
+    padding:0em 2em;
 }
 
 .quiz-success {
@@ -647,8 +647,9 @@ ul.unvs-abm-modal-tab--topics {
 }
 
 .unvs-abm-modal-quiz--question {
-    font-size:2em;
+    font-size:1.5em;
     color:#707070;
+    margin-bottom:0;
 }
 
 .unvs-abm-modal-quiz--text {
@@ -656,8 +657,9 @@ ul.unvs-abm-modal-tab--topics {
 }
 
 .unvs-abm-modal-quiz--small {
-    font-size:1.5em;
+    font-size:1em;
     color:#C9C9C9;
+    margin:.5em 0;
 }
 
 .unvs-abm-modal-quiz--radio {
@@ -665,8 +667,9 @@ ul.unvs-abm-modal-tab--topics {
     border:1px solid #BCBCBC;
     padding:1.3em 1em;
     border-radius:5px;
-    font-size:1.1em;
-    margin:.3em;
+    font-size:1em;
+    margin: 0.1em;
+    min-height: 65px;
 }
 
 .unvs-spacing {
@@ -715,7 +718,7 @@ ul.unvs-abm-modal-tab--topics {
 
 .unvs-quiz-success--small {
     opacity:.6;
-    max-width:300px;
+    max-width:600px;
     margin:0 auto;
 }
 
@@ -723,6 +726,18 @@ ul.unvs-abm-modal-tab--topics {
     border-color: #86bc25;
     outline: 0;
     box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%), 0 0 8px #86bc25;
+}
+
+.unvs-abm-modal-quiz--radio label {
+    width:100%;
+}
+.unvs-abm-modal-quiz--radio  input[type=text] {
+    width:100%;
+    position:relative;
+    left:-10px;
+    padding:.2em;
+    border:transparent;
+    background:transparent;
 }
 
 /**** 
